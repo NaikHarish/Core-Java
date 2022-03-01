@@ -22,10 +22,10 @@ public class BankMenuDrivenProgram {
 		do {
 			
 			System.out.println("1 - Open New Account ");
-			System.out.println("2 - Show all Account");
-			System.out.println("3 - Search Account");
-			System.out.println("4 - Registration");
-			System.out.println("5 - Login");
+			System.out.println("2 - Registration");
+			System.out.println("3 - Login");
+			System.out.println("4 - Show all Account Details");
+			System.out.println("5 - Search Account");
 			System.out.println("0 - Exit");
 			
 			System.out.print("Enter your Choice: ");
@@ -40,18 +40,6 @@ public class BankMenuDrivenProgram {
 				
 			case 2:
 				System.out.println();
-				System.out.println("# Show all Account Details #");
-				accountDetails.showAccountDetails();
-				break;
-				
-			case 3:
-				System.out.println();
-				System.out.println("# Search Account #");
-				accountDetails.searchAccount();
-				break;
-				
-			case 4:
-				System.out.println();
 				System.out.println("# Register #");
 				try {
 					accountDetails.registration();
@@ -59,11 +47,23 @@ public class BankMenuDrivenProgram {
 					e.printStackTrace();
 				}
 				break;
-				
-			case 5:
+					
+			case 3:
 				System.out.println();
 				System.out.println("# Login #");
 				accountDetails.login();
+				break;
+					
+			case 4:
+				System.out.println();
+				System.out.println("# Show all Account Details #");
+				accountDetails.showAccountDetails();
+				break;
+					
+			case 5:
+				System.out.println();
+				System.out.println("# Search Account #");
+				accountDetails.searchAccount();
 				break;
 				
 			case 0:
